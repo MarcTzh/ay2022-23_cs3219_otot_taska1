@@ -15,5 +15,8 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+# App running on port 8080 within container, so need to expose it
 EXPOSE 8080
+
+# Command that starts our app
 CMD [ "node", "index.js" ]
